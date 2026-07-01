@@ -9,51 +9,58 @@
 <body class="dashboard-page">
     <main class="dashboard">
 
-    <section class="perfil">
+    <section class="hero-dashboard">
 
-        <img src="../assets/img/patricia.jpg"
-             alt="Patricia"
-             class="foto">
+        <div class="hero-info">
+            <p class="tag">Patricia Dev Portal</p>
 
-        <h1>Patricia Miscolcz</h1>
+            <h1 id="nome">Patricia Miscolcz</h1>
 
-        <h3>Professora Universitária</h3>
+            <h3 id="profissao">Professora Universitária</h3>
 
-        <p>
-            Matemática • Inteligência Artificial •
-            Ciência de Dados • Desenvolvimento
-        </p>
+            <p class="descricao" id="descricao">
+                Matemática • Inteligência Artificial • Ciência de Dados • Desenvolvimento
+            </p>
+
+            <p class="frase" id="frase">
+                Transformando conhecimento em tecnologia, dados e aprendizagem.
+            </p>
+
+            <button id="logoutBtn">Sair</button>
+        </div>
+
+        <div class="hero-foto">
+            <img src="../assets/img/patricia.jpg" alt="Patricia Miscolcz">
+            <span class="status">● Online</span>
+        </div>
 
     </section>
 
-    <section class="cards">
+    <section class="resumo-cards">
 
-        <div class="card">
+        <div class="card-info">
             <h2>🎓 Formação</h2>
-            <p>Conheça minha formação acadêmica.</p>
+            <p>USP • UniFECAF • Pós-graduação</p>
         </div>
 
-        <div class="card">
+        <div class="card-info">
             <h2>💼 Projetos</h2>
-            <p>Projetos desenvolvidos.</p>
+            <p>GitHub, Firebase, Dados e IA</p>
         </div>
 
-        <div class="card">
+        <div class="card-info">
             <h2>📚 Disciplinas</h2>
-            <p>Disciplinas ministradas.</p>
+            <p>Matemática, Python, Banco de Dados e IA</p>
         </div>
 
-        <div class="card">
+        <div class="card-info">
             <h2>🏆 Certificados</h2>
-            <p>Cursos e certificações.</p>
+            <p>Cursos, formações e aperfeiçoamentos.</p>
         </div>
 
     </section>
-
-    <button id="logoutBtn">Sair</button>
 
     </main>
-
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
