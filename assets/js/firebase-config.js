@@ -15,3 +15,5 @@ firebase.initializeApp(firebaseConfig);
 // Serviços que vamos usar
 const auth = firebase.auth();
 const db = firebase.firestore();
+
+console.log("Firebase conectado com sucesso!");

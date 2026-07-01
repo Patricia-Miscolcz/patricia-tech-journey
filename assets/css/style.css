@@ -103,3 +103,93 @@ button:hover {
         text-align: center;
     }
 }
+
+/* ===========================
+   DASHBOARD
+=========================== */
+
+.dashboard-page{
+    background:#f4f7fb;
+    min-height:100vh;
+}
+
+.dashboard{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.perfil{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+    margin-bottom:30px;
+}
+
+.foto{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #2563eb;
+    margin-bottom:20px;
+}
+
+.perfil h1{
+    margin:0;
+    color:#1f2937;
+}
+
+.perfil h3{
+    color:#2563eb;
+    margin:10px 0;
+}
+
+.perfil p{
+    color:#666;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h2{
+    margin-top:0;
+    color:#2563eb;
+}
+
+#logoutBtn{
+    width:220px;
+    display:block;
+    margin:auto;
+    background:#dc2626;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+#logoutBtn:hover{
+    background:#b91c1c;
+}
