@@ -12,6 +12,9 @@ async function carregarPerfil() {
             document.getElementById("profissao").textContent = dados.profissao;
             document.getElementById("descricao").textContent = dados.descricao;
             document.getElementById("frase").textContent = dados.frase;
+            
+            document.getElementById("githubLink").href = dados.github;
+            document.getElementById("linkedinLink").href = dados.linkedin;
 
         }
 
@@ -21,9 +24,6 @@ async function carregarPerfil() {
 
     }
 }
-
-
-
 
 
 async function carregarFormacoes() {
@@ -83,11 +83,59 @@ async function carregarImpactosDisciplinas() {
     }
 }
 
+async function carregarTecnologias() {
+    try {
+        const snapshot = await db.collection("tecnologias").get();
+        const lista = document.getElementById("listaTecnologias");
+
+        lista.innerHTML = "";
+
+        snapshot.forEach((doc) => {
+            const dados = doc.data();
+
+            let iconeHTML = "";
+
+            if (dados.tipo === "fontawesome") {
+                iconeHTML = `<i class="${dados.icone}"></i>`;
+            } else {
+                iconeHTML = `<i class="${dados.icone} colored"></i>`;
+            }
+
+            lista.innerHTML += `
+                <div class="tech-card">
+                    <div class="tech-icone">
+                        ${iconeHTML}
+                    </div>
+
+                    <h3>${dados.nome}</h3>
+                    <p>${dados.descricao}</p>
+                    <span>${dados.nivel}</span>
+                </div>
+            `;
+        });
+
+    } catch (erro) {
+        console.error("Erro ao carregar tecnologias:", erro);
+    }
+}
 
 
+async function carregarEstatisticas() {
+    try {
+        const formacoes = await db.collection("formacoes").get();
+        const tecnologias = await db.collection("tecnologias").get();
+        const disciplinas = await db.collection("impactosDisciplinas").get();
+        const certificados = await db.collection("certificados").get();
 
+        document.getElementById("totalFormacoes").textContent = formacoes.size;
+        document.getElementById("totalTecnologias").textContent = tecnologias.size;
+        document.getElementById("totalDisciplinas").textContent = disciplinas.size;
+        document.getElementById("totalCertificados").textContent = certificados.size;
 
-
+    } catch (erro) {
+        console.error("Erro ao carregar estatísticas:", erro);
+    }
+}
 
 
 const logoutBtn = document.getElementById("logoutBtn");
@@ -101,3 +149,5 @@ logoutBtn.addEventListener("click", async function () {
 carregarPerfil();
 carregarFormacoes();
 carregarImpactosDisciplinas();
+carregarTecnologias();
+carregarEstatisticas();

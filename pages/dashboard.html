@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - LoginCloud</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 </head>
 <body class="dashboard-page">
+
+    <header class="topbar">
+        <span>Patricia Dev Portal</span>
+
+        <button id="logoutBtn" class="logout-topo">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+    </header>
+
+
     <main class="dashboard">
+        
 
     <section class="hero-dashboard">
+
+        
 
         <div class="hero-info">
             <p class="tag">Patricia Dev Portal</p>
@@ -22,7 +39,21 @@
 
             <p class="frase" id="frase"></p>
 
-            <button id="logoutBtn">Sair</button>
+
+            <div class="social-links">
+                <a id="githubLink" href="#" target="_blank" class="social-btn github-btn">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <a id="linkedinLink" href="#" target="_blank" class="social-btn linkedin-btn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+
+
+           
         </div>
 
         <div class="hero-foto">
@@ -31,6 +62,58 @@
         </div>
 
     </section>
+
+    
+    <section class="estatisticas">
+
+        <div class="estatistica-card">
+            <span>🎓</span>
+            <h3 id="totalFormacoes">0</h3>
+            <p>Formações</p>
+        </div>
+
+        <div class="estatistica-card">
+            <span>🚀</span>
+            <h3 id="totalTecnologias">0</h3>
+            <p>Tecnologias</p>
+        </div>
+
+        <div class="estatistica-card">
+            <span>📚</span>
+            <h3 id="totalDisciplinas">0</h3>
+            <p>Disciplinas</p>
+        </div>
+
+        <div class="estatistica-card">
+            <span>🏆</span>
+            <h3 id="totalCertificados">0</h3>
+            <p>Certificados</p>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <section class="tecnologias">
+
+        <h2>🚀 Tecnologias</h2>
+
+        <p>
+            Tecnologias utilizadas em projetos, ensino e desenvolvimento de soluções.
+        </p>
+
+        <div class="tecnologias-grid" id="listaTecnologias"></div>
+
+    </section>
+
+
+
+
 
     <section class="resumo-cards">
 
