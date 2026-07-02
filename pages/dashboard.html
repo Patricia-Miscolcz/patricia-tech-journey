@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - LoginCloud</title>
+    <title>Patricia Miscolcz | Tech Journey</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -12,7 +12,14 @@
 <body class="dashboard-page">
 
     <header class="topbar">
-        <span>Patricia Dev Portal</span>
+        <div class="logo">
+            <div class="logo-icon">PM</div>
+
+            <div>
+                <h2>Patricia Miscolcz</h2>
+                <span>Tech Journey</span>
+            </div>
+        </div>
 
         <button id="logoutBtn" class="logout-topo">
             <i class="fa-solid fa-right-from-bracket"></i>
@@ -25,7 +32,7 @@
     <section class="hero-dashboard">
 
         <div class="hero-info">
-            <p class="tag">Patricia Dev Portal</p>
+            <p class="tag">TECH JOURNEY</p>
 
             <h1 id="nome"></h1>
 
@@ -48,11 +55,30 @@
                 </a>
             </div>
 
+
+            <div class="hero-infos">
+
+                    <div class="hero-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>São Paulo • Brasil</span>
+                    </div>
+
+                    <div class="hero-info-item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>USP • UniFECAF</span>
+                    </div>
+
+                    <div class="hero-info-item">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Educação • Tecnologia • Inovação</span>
+                    </div>
+
+            </div>
         </div>
 
         <div class="hero-foto">
             <img src="../assets/img/patricia.jpg" alt="Patricia Miscolcz">
-            <span class="status">● Online</span>
+            <span class="status">● Disponível para projetos e palestras</span>
         </div>
 
     </section>
@@ -197,6 +223,22 @@
     </section>
 
     </main>
+    <footer class="footer">
+        <p class="footer-frase">
+            "Nunca é tarde para aprender, recomeçar e transformar a própria história."
+        </p>
+        <p class="footer-assinatura">— Patricia Miscolcz</p>
+
+        <p class="footer-copy">
+        © 2026 Patricia Miscolcz | Tech Journey
+        </p>
+
+        <p class="footer-tech">
+            Desenvolvido com HTML • CSS • JavaScript • Firebase
+        </p>
+    </footer>
+
+    
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
