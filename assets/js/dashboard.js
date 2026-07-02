@@ -16,6 +16,27 @@ async function carregarPerfil() {
             document.getElementById("githubLink").href = dados.github;
             document.getElementById("linkedinLink").href = dados.linkedin;
 
+
+            document.getElementById("tituloSobre").textContent = dados.tituloSobre;
+            document.getElementById("subtituloSobre").textContent = dados.subtituloSobre;
+         
+            document.getElementById("missao").textContent = dados.missao;
+            document.getElementById("filosofia").textContent = dados.filosofia;
+
+            document.getElementById("trajetoria1Titulo").textContent = dados.trajetoria1Titulo;
+            document.getElementById("trajetoria1Texto").textContent = dados.trajetoria1Texto;
+
+            document.getElementById("trajetoria2Titulo").textContent = dados.trajetoria2Titulo;
+            document.getElementById("trajetoria2Texto").textContent = dados.trajetoria2Texto;
+
+            document.getElementById("trajetoria3Titulo").textContent = dados.trajetoria3Titulo;
+            document.getElementById("trajetoria3Texto").textContent = dados.trajetoria3Texto;
+
+            document.getElementById("trajetoria4Titulo").textContent = dados.trajetoria4Titulo;
+            document.getElementById("trajetoria4Texto").textContent = dados.trajetoria4Texto;
+
+            document.getElementById("trajetoria5Titulo").textContent = dados.trajetoria5Titulo;
+            document.getElementById("trajetoria5Texto").textContent = dados.trajetoria5Texto;
         }
 
     } catch (erro) {
@@ -101,15 +122,33 @@ async function carregarTecnologias() {
                 iconeHTML = `<i class="${dados.icone} colored"></i>`;
             }
 
+                        let tagsHTML = "";
+
+            if (dados.tags) {
+
+                dados.tags.forEach((tag) => {
+
+                    tagsHTML += `<span class="tag-tech">${tag}</span>`;
+
+                });
+
+            }
+
             lista.innerHTML += `
                 <div class="tech-card">
+
                     <div class="tech-icone">
                         ${iconeHTML}
                     </div>
 
                     <h3>${dados.nome}</h3>
+
                     <p>${dados.descricao}</p>
-                    <span>${dados.nivel}</span>
+
+                    <div class="tags-tech">
+                        ${tagsHTML}
+                    </div>
+
                 </div>
             `;
         });
