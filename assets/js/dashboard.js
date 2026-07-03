@@ -214,6 +214,53 @@ async function carregarCertificados() {
 }
 
 
+async function carregarBadges() {
+
+    try {
+
+        const snapshot = await db.collection("badges").get();
+
+        const lista = document.getElementById("listaBadges");
+
+        lista.innerHTML = "";
+
+        snapshot.forEach((doc) => {
+
+            const dados = doc.data();
+
+            lista.innerHTML += `
+                <div class="badge-card">
+
+                    <img src="../assets/img/badges/${dados.imagem}" alt="${dados.nome}">
+
+                    <h3>${dados.nome}</h3>
+
+                    <p>${dados.instituicao}</p>
+
+                    <small>${dados.categoria}</small>
+
+                    <a href="${dados.link}"
+                       target="_blank"
+                       class="btn-badge">
+
+                        🏅 Ver Credencial
+
+                    </a>
+
+                </div>
+            `;
+
+        });
+
+    } catch (erro) {
+
+        console.error("Erro ao carregar badges:", erro);
+
+    }
+
+}
+
+
 
 const logoutBtn = document.getElementById("logoutBtn");
 
@@ -229,3 +276,4 @@ carregarImpactosDisciplinas();
 carregarTecnologias();
 carregarEstatisticas();
 carregarCertificados();
+carregarBadges();
