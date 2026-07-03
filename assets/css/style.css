@@ -903,3 +903,106 @@ button:hover {
     font-size:16px;
 
 }
+
+
+/* ==========================
+   CERTIFICAÇÕES
+========================== */
+
+.certificacoes{
+    margin:50px 0;
+    padding:32px;
+    background:#0f172a;
+    border:1px solid #14f1d9;
+    border-radius:24px;
+    box-shadow:0 0 22px rgba(20,241,217,.28);
+}
+
+.section-header h2{
+    color:#14f1d9;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.section-header p{
+    color:#cbd5e1;
+    margin-bottom:28px;
+}
+
+.certificados-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+}
+
+
+.certificado-card{
+    background:#111827;
+    border:1px solid rgba(20,241,217,.25);
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.certificado-card:hover{
+    transform:translateY(-8px);
+    border-color:#14f1d9;
+    box-shadow:0 15px 35px rgba(20,241,217,.20);
+}
+
+.certificado-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+.certificado-info{
+    padding:18px;
+}
+
+.certificado-tipo{
+    display:inline-block;
+    padding:5px 12px;
+    background:rgba(20,241,217,.12);
+    color:#14f1d9;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+.certificado-info h3{
+    color:#fff;
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.certificado-info p{
+    color:#cbd5e1;
+    margin-bottom:8px;
+}
+
+.certificado-info small{
+    display:block;
+    color:#94a3b8;
+    margin-bottom:18px;
+}
+
+.btn-certificado{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    padding:12px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    color:#0f172a;
+    background:#14f1d9;
+    transition:.3s;
+}
+
+.btn-certificado:hover{
+    background:#0ff;
+}

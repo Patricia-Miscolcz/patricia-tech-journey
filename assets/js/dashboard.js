@@ -177,6 +177,44 @@ async function carregarEstatisticas() {
 }
 
 
+async function carregarCertificados() {
+    try {
+        const snapshot = await db.collection("certificados").get();
+        const lista = document.getElementById("listaCertificados");
+
+        lista.innerHTML = "";
+
+        snapshot.forEach((doc) => {
+            const dados = doc.data();
+
+            lista.innerHTML += `
+                <div class="certificado-card">
+                    <img src="../assets/img/certificados/${dados.imagem}" alt="${dados.nome}">
+
+                    <div class="certificado-info">
+                        <span class="certificado-tipo">🎓 ${dados.tipo}</span>
+
+                        <h3>${dados.nome}</h3>
+
+                        <p>${dados.instituicao}</p>
+
+                        <small>${dados.categoria} • ${dados.ano}</small>
+
+                        <a href="../assets/certificados/${dados.pdf}" target="_blank" class="btn-certificado">
+                            🔍 Visualizar Certificado
+                        </a>
+                    </div>
+                </div>
+            `;
+        });
+
+    } catch (erro) {
+        console.error("Erro ao carregar certificados:", erro);
+    }
+}
+
+
+
 const logoutBtn = document.getElementById("logoutBtn");
 
 logoutBtn.addEventListener("click", async function () {
@@ -190,3 +228,4 @@ carregarFormacoes();
 carregarImpactosDisciplinas();
 carregarTecnologias();
 carregarEstatisticas();
+carregarCertificados();
