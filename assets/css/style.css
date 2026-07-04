@@ -203,41 +203,6 @@ button:hover {
     transform:scale(1.03);
 }
 
-.resumo-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 18px;
-}
-
-.card-info {
-    background: #0f172a;
-    color: #f8fafc;
-    padding: 24px;
-    border-radius: 18px;
-    border: 1px solid #14f1d9;
-    box-shadow: 0 0 22px rgba(20, 241, 217, 0.35);
-    transition: 0.3s;
-}
-
-.card-info:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 0 35px rgba(20, 241, 217, 0.6);
-}
-
-.card-info h2 {
-    margin-top: 0;
-    color: #14f1d9;
-}
-
-.card-info p,
-#listaFormacoes p {
-    color: #cbd5e1;
-}
-
-#listaFormacoes strong {
-    color: #ffffff;
-}
-
 #logoutBtn {
     background: transparent;
     border: 1px solid #ef4444;
@@ -1079,5 +1044,97 @@ button:hover {
 }
 
 .btn-badge:hover{
+    background:#0ff;
+}
+
+/* =====================================
+   FORMAÇÕES
+===================================== */
+
+.formacoes{
+    margin:50px 0;
+    padding:32px;
+    background:#0f172a;
+    border:1px solid #14f1d9;
+    border-radius:24px;
+    box-shadow:0 0 22px rgba(20,241,217,.28);
+}
+
+.formacoes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+}
+
+.formacao-card{
+    background:#111827;
+    border:1px solid rgba(20,241,217,.25);
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.formacao-card:hover{
+    transform:translateY(-8px);
+    border-color:#14f1d9;
+    box-shadow:0 15px 35px rgba(20,241,217,.20);
+}
+
+.formacao-card img{
+    width:130px;
+    height:110px;
+    object-fit:contain;
+    display:block;
+    margin:30px auto 20px;
+}
+
+.formacao-info{
+    padding:18px;
+    text-align:center;
+}
+
+.formacao-tipo{
+    display:inline-block;
+    padding:5px 12px;
+    background:rgba(20,241,217,.12);
+    color:#14f1d9;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+.formacao-info h3{
+    color:#fff;
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.formacao-info p{
+    color:#cbd5e1;
+    margin-bottom:8px;
+}
+
+.formacao-info small{
+    display:block;
+    color:#94a3b8;
+    margin-bottom:18px;
+}
+
+.btn-formacao{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    padding:12px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    color:#0f172a;
+    background:#14f1d9;
+    transition:.3s;
+}
+
+.btn-formacao:hover{
     background:#0ff;
 }

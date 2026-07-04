@@ -46,36 +46,46 @@ async function carregarPerfil() {
     }
 }
 
-
 async function carregarFormacoes() {
-
     try {
+       
+        const snapshot = await db
+        .collection("formacoes")
+        .orderBy("ano")
+        .get();
 
-        const snapshot = await db.collection("formacoes").get();
 
         const lista = document.getElementById("listaFormacoes");
 
         lista.innerHTML = "";
 
         snapshot.forEach((doc) => {
-
             const dados = doc.data();
 
             lista.innerHTML += `
-                <p>
-                    <strong>${dados.instituicao}</strong><br>
-                    ${dados.curso}
-                </p>
-            `;
+                <div class="formacao-card">
+                    <img src="../assets/formacoes/${dados.imagem}" alt="${dados.nome}">
 
+                    <div class="formacao-info">
+                        <span class="formacao-tipo">🎓 ${dados.tipo}</span>
+
+                        <h3>${dados.nome}</h3>
+
+                        <p>${dados.instituicao}</p>
+
+                        <small>📅 Conclusão: ${dados.ano}</small>
+
+                        <a href="../assets/formacoes/${dados.pdf}" target="_blank" class="btn-formacao">
+                            📄 Visualizar Documento
+                        </a>
+                    </div>
+                </div>
+            `;
         });
 
     } catch (erro) {
-
         console.error("Erro ao carregar formações:", erro);
-
     }
-
 }
 
 async function carregarImpactosDisciplinas() {
@@ -157,7 +167,6 @@ async function carregarTecnologias() {
         console.error("Erro ao carregar tecnologias:", erro);
     }
 }
-
 
 async function carregarEstatisticas() {
     try {
@@ -259,8 +268,6 @@ async function carregarBadges() {
     }
 
 }
-
-
 
 const logoutBtn = document.getElementById("logoutBtn");
 
