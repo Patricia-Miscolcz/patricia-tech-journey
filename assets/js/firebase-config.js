@@ -12,8 +12,7 @@ const firebaseConfig = {
 // Inicializa o Firebase
 firebase.initializeApp(firebaseConfig);
 
-// Serviços que vamos usar
-const auth = firebase.auth();
+// Serviço utilizado pelo projeto
 const db = firebase.firestore();
 
 console.log("Firebase conectado com sucesso!");

@@ -203,16 +203,8 @@ button:hover {
     transform:scale(1.03);
 }
 
-#logoutBtn {
-    background: transparent;
-    border: 1px solid #ef4444;
-    color: #ef4444;
-}
 
-#logoutBtn:hover {
-    background: #ef4444;
-    color: white;
-}
+
 
 
 
@@ -502,32 +494,9 @@ button:hover {
     text-transform:uppercase;
 }
 
-.logout-topo{
-    display:flex;
-    align-items:center;
-    gap:10px;
 
-    width:auto;
-    margin:0;
-    padding:10px 16px;
 
-    background:transparent;
-    color:#ef4444;
 
-    border:1px solid #ef4444;
-    border-radius:999px;
-
-    font-weight:600;
-    cursor:pointer;
-    transition:.35s;
-}
-
-.logout-topo:hover{
-    background:#ef4444;
-    color:white;
-    transform:translateY(-2px);
-    box-shadow:0 0 20px rgba(239,68,68,.45);
-}
 
 /* =====================================
    ESTATÍSTICAS

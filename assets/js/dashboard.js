@@ -64,7 +64,7 @@ async function carregarFormacoes() {
 
             lista.innerHTML += `
                 <div class="formacao-card">
-                    <img src="../assets/formacoes/${dados.imagem}" alt="${dados.nome}">
+                    <img src="assets/formacoes/${dados.imagem}" alt="${dados.nome}">
 
                     <div class="formacao-info">
                         <span class="formacao-tipo">🎓 ${dados.tipo}</span>
@@ -75,7 +75,7 @@ async function carregarFormacoes() {
 
                         <small>📅 Conclusão: ${dados.ano}</small>
 
-                        <a href="../assets/formacoes/${dados.pdf}" target="_blank" class="btn-formacao">
+                        <a href="assets/formacoes/${dados.pdf}" target="_blank" class="btn-formacao">
                             📄 Visualizar Documento
                         </a>
                     </div>
@@ -198,7 +198,7 @@ async function carregarCertificados() {
 
             lista.innerHTML += `
                 <div class="certificado-card">
-                    <img src="../assets/img/certificados/${dados.imagem}" alt="${dados.nome}">
+                    <img src="assets/img/certificados/${dados.imagem}" alt="${dados.nome}">
 
                     <div class="certificado-info">
                         <span class="certificado-tipo">🎓 ${dados.tipo}</span>
@@ -209,7 +209,7 @@ async function carregarCertificados() {
 
                         <small>${dados.categoria} • ${dados.ano}</small>
 
-                        <a href="../assets/certificados/${dados.pdf}" target="_blank" class="btn-certificado">
+                        <a href="assets/certificados/${dados.pdf}" target="_blank" class="btn-certificado">
                             🔍 Visualizar Certificado
                         </a>
                     </div>
@@ -240,7 +240,7 @@ async function carregarBadges() {
             lista.innerHTML += `
                 <div class="badge-card">
 
-                    <img src="../assets/img/badges/${dados.imagem}" alt="${dados.nome}">
+                    <img src="assets/img/badges/${dados.imagem}" alt="${dados.nome}">
 
                     <h3>${dados.nome}</h3>
 
@@ -269,12 +269,7 @@ async function carregarBadges() {
 
 }
 
-const logoutBtn = document.getElementById("logoutBtn");
 
-logoutBtn.addEventListener("click", async function () {
-    await auth.signOut();
-    window.location.href = "../index.html";
-});
 
 // Carrega o perfil quando abrir o dashboard
 carregarPerfil();
