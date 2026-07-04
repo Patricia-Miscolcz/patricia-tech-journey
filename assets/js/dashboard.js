@@ -170,6 +170,56 @@ async function carregarTecnologias() {
     }
 }
 
+
+async function carregarAprendizadoContinuo() {
+
+    try {
+
+        const snapshot = await db.collection("aprendizadoContinuo")
+                                 .orderBy("ordem")
+                                 .get();
+
+        const lista = document.getElementById("listaAprendizado");
+
+        lista.innerHTML = "";
+
+        snapshot.forEach((doc) => {
+
+            const dados = doc.data();
+
+            lista.innerHTML += `
+                <div class="aprendizado-card">
+
+                    <span class="aprendizado-icone">
+                        <i class="${dados.icone}" style="color:${dados.cor};"></i>
+                    </span>
+
+                    <h3>${dados.titulo}</h3>
+
+                    <p>${dados.descricao}</p>
+
+                    <small>${dados.status}</small>
+
+                </div>
+            `;
+
+        });
+
+    } catch (erro) {
+
+        console.error("Erro ao carregar aprendizado contínuo:", erro);
+
+    }
+
+}
+
+
+
+
+
+
+
+
 async function carregarEstatisticas() {
     try {
         const formacoes = await db.collection("formacoes").get();
@@ -281,3 +331,4 @@ carregarTecnologias();
 carregarEstatisticas();
 carregarCertificados();
 carregarBadges();
+carregarAprendizadoContinuo();
