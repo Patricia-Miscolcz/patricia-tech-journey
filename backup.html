@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Backup Firestore</title>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+
+<script src="assets/js/firebase-config.js"></script>
+</head>
+
+<body>
+
+<h1>Backup Firestore</h1>
+
+<button onclick="gerarBackup()">Gerar Backup</button>
+
+<script>
+
+async function gerarBackup(){
+
+    const colecoes = [
+        "usuarios",
+        "formacoes",
+        "certificados",
+        "badges",
+        "tecnologias",
+        "impactosDisciplinas"
+    ];
+
+    let backup = {};
+
+    for(const nome of colecoes){
+
+        const snapshot = await db.collection(nome).get();
+
+        backup[nome] = [];
+
+        snapshot.forEach(doc=>{
+
+            backup[nome].push({
+                id: doc.id,
+                ...doc.data()
+            });
+
+        });
+
+    }
+
+    const blob = new Blob(
+        [JSON.stringify(backup,null,4)],
+        {type:"application/json"}
+    );
+
+    const a = document.createElement("a");
+
+    a.href = URL.createObjectURL(blob);
+
+    a.download = "firestore-backup.json";
+
+    a.click();
+
+}
+
+</script>
+
+</body>
+</html>
