@@ -15,6 +15,8 @@ async function carregarPerfil() {
             
             document.getElementById("githubLink").href = dados.github;
             document.getElementById("linkedinLink").href = dados.linkedin;
+            document.getElementById("lattesLink").href = dados.lattes;
+            document.getElementById("cvLink").href = `assets/cv/${dados.cv}`;
 
 
             document.getElementById("tituloSobre").textContent = dados.tituloSobre;
