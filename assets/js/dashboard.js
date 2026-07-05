@@ -214,10 +214,62 @@ async function carregarAprendizadoContinuo() {
 }
 
 
+async function carregarAcervo() {
 
+    try {
 
+        const snapshot = await db.collection("acervo")
+            .orderBy("ordem")
+            .get();
 
+        const lista = document.getElementById("listaAcervo");
 
+        lista.innerHTML = "";
+
+        snapshot.forEach(doc => {
+
+            const dados = doc.data();
+
+            lista.innerHTML += `
+
+               <div class="acervo-card">
+
+                    <div class="acervo-capa">
+
+                        <img src="assets/img/acervo/${dados.imagem}" alt="${dados.titulo}">
+
+                    </div>
+
+                    <div class="acervo-info">
+
+                        <span class="categoria">${dados.categoria}</span>
+
+                        <h3>${dados.titulo}</h3>
+
+                        <p class="acervo-autor">
+                            <i class="fa-solid fa-user-pen"></i>
+                            ${dados.autor}
+                        </p>
+
+                        <p class="acervo-topicos">
+                            ${dados.topicos.split(",").join(" • ")}
+                        </p>
+
+                    </div>
+
+                </div>
+
+            `;
+
+        });
+
+    } catch (erro) {
+
+        console.error("Erro ao carregar acervo:", erro);
+
+    }
+
+}
 
 
 async function carregarEstatisticas() {
@@ -321,8 +373,6 @@ async function carregarBadges() {
 
 }
 
-
-
 // Carrega o perfil quando abrir o dashboard
 carregarPerfil();
 carregarFormacoes();
@@ -332,3 +382,4 @@ carregarEstatisticas();
 carregarCertificados();
 carregarBadges();
 carregarAprendizadoContinuo();
+carregarAcervo();

@@ -3,313 +3,344 @@
         {
             "id": "patricia",
             "nome": "Patricia Miscolcz",
-            "linkedin": "https://www.linkedin.com/in/patriciamiscolcz/",
-            "trajetoria1Titulo": "👩‍🎓 O início da jornada",
-            "descricao": "Especialista em Matemática • IA • Ciência de Dados • Desenvolvimento de Software",
-            "trajetoria5Titulo": "👩‍🏫 Como Professora",
-            "trajetoria2Titulo": "💼 Mercado Financeiro",
-            "trajetoria4Texto": "Após concluir a graduação, finalizei minha Pós-Graduação em Desenvolvimento Full Stack e sigo estudando Inteligência Artificial, Ciência de Dados, Cloud Computing e Desenvolvimento de Software.",
-            "missao": "Transformar conhecimento em oportunidades através da educação e da tecnologia.",
-            "trajetoria3Titulo": "🚀 A virada para Tecnologia",
-            "tituloSobre": "Nunca é tarde para recomeçar.",
-            "trajetoria2Texto": "Antes da tecnologia construí minha carreira na área financeira. Mesmo em ambientes com processos bastante estruturados, sempre procurei melhorar a rotina utilizando o Excel para automatizar relatórios e facilitar o trabalho.",
-            "trajetoria4Titulo": "👩‍💻 Aprendizado Contínuo",
-            "foto": "patricia.jpg",
-            "trajetoria1Texto": "Minha história começou muito antes da tecnologia. Sempre fui apaixonada pelo conhecimento e pelos desafios. Um dos meus maiores sonhos era ingressar na Universidade de São Paulo (USP) para cursar Matemática.",
-            "trajetoria5Texto": "Hoje uno minhas duas maiores paixões: educação e tecnologia. Meu objetivo é transformar conteúdos complexos em experiências práticas e mostrar aos meus alunos que sempre é possível aprender, evoluir e construir uma nova história.",
-            "github": "https://github.com/Patricia-Miscolcz",
-            "subtituloSobre": "Minha trajetória é a prova de que o conhecimento transforma vidas.",
-            "profissao": "Professora Universitária • Tutora Acadêmica • Desenvolvedora",
             "trajetoria3Texto": "Durante a pandemia decidi transformar um momento de mudanças em uma oportunidade de crescimento. Iniciei a graduação em Análise e Desenvolvimento de Sistemas na UniFECAF e descobri uma nova paixão.",
+            "subtituloSobre": "Minha trajetória é a prova de que o conhecimento transforma vidas.",
+            "trajetoria5Texto": "Hoje uno minhas duas maiores paixões: educação e tecnologia. Meu objetivo é transformar conteúdos complexos em experiências práticas e mostrar aos meus alunos que sempre é possível aprender, evoluir e construir uma nova história.",
+            "cv": "curriculo-patricia.pdf",
+            "tituloSobre": "Nunca é tarde para recomeçar.",
             "filosofia": "A tecnologia muda o mundo quando é compartilhada com propósito.",
-            "frase": "A tecnologia não tem idade. O conhecimento transforma vidas."
+            "trajetoria1Titulo": "👩‍🎓 O início da jornada",
+            "trajetoria4Texto": "Após concluir a graduação, finalizei minha Pós-Graduação em Desenvolvimento Full Stack e sigo estudando Inteligência Artificial, Ciência de Dados, Cloud Computing e Desenvolvimento de Software.",
+            "descricao": "Especialista em Matemática • IA • Ciência de Dados • Desenvolvimento de Software",
+            "trajetoria1Texto": "Minha história começou muito antes da tecnologia. Sempre fui apaixonada pelo conhecimento e pelos desafios. Um dos meus maiores sonhos era ingressar na Universidade de São Paulo (USP) para cursar Matemática.",
+            "trajetoria3Titulo": "🚀 A virada para Tecnologia",
+            "trajetoria5Titulo": "👩‍🏫 Como Professora",
+            "frase": "A tecnologia não tem idade. O conhecimento transforma vidas.",
+            "missao": "Transformar conhecimento em oportunidades através da educação e da tecnologia.",
+            "foto": "patricia.jpg",
+            "trajetoria2Titulo": "💼 Mercado Financeiro",
+            "lattes": "https://lattes.cnpq.br/2244317160129196",
+            "github": "https://github.com/Patricia-Miscolcz",
+            "trajetoria4Titulo": "👩‍💻 Aprendizado Contínuo",
+            "linkedin": "https://www.linkedin.com/in/patriciamiscolcz/",
+            "trajetoria2Texto": "Antes da tecnologia construí minha carreira na área financeira. Mesmo em ambientes com processos bastante estruturados, sempre procurei melhorar a rotina utilizando o Excel para automatizar relatórios e facilitar o trabalho.",
+            "profissao": "Professora Universitária • Tutora Acadêmica • Desenvolvedora"
         }
     ],
     "formacoes": [
         {
             "id": "ads",
-            "nome": "Análise e Desenvolvimento de Sistemas",
-            "ano": "2024",
-            "imagem": "unifecaf.png",
+            "instituicao": "UniFECAF",
             "pdf": "diploma-ads.pdf",
-            "tipo": "Tecnólogo",
-            "instituicao": "UniFECAF"
+            "nome": "Análise e Desenvolvimento de Sistemas",
+            "imagem": "unifecaf.png",
+            "ano": "2024",
+            "tipo": "Tecnólogo"
         },
         {
             "id": "matematica",
-            "tipo": "Licenciatura",
-            "instituicao": "Universidade de São Paulo",
-            "pdf": "diploma-usp.pdf",
-            "nome": "Licenciatura em Matemática",
             "ano": "2018",
-            "imagem": "usp.png"
+            "tipo": "Licenciatura",
+            "imagem": "usp.png",
+            "pdf": "diploma-usp.pdf",
+            "instituicao": "Universidade de São Paulo",
+            "nome": "Licenciatura em Matemática"
         },
         {
             "id": "pos",
             "instituicao": "UniFECAF",
-            "tipo": "Pós-graduação",
             "pdf": "diploma-ads.pdf",
+            "nome": "Full Stack Development - Design, Engineering e Deployment",
             "imagem": "unifecaf.png",
             "ano": "2026",
-            "nome": "Full Stack Development - Design, Engineering e Deployment"
+            "tipo": "Pós-graduação"
+        }
+    ],
+    "aprendizadoContinuo": [
+        {
+            "id": "ingles",
+            "descricao": "Desenvolvimento contínuo da comunicação em inglês, leitura técnica e compreensão de conteúdos voltados à tecnologia, educação e pesquisa.",
+            "status": "📖 Formação contínua",
+            "ordem": "1",
+            "titulo": "Inglês",
+            "icone": "fa-solid fa-globe",
+            "cor": "#2563eb"
+        },
+        {
+            "id": "inovacao-ensino",
+            "status": "Evolução constante",
+            "descricao": "Pesquisa contínua de ferramentas, metodologias e recursos digitais para transformar conteúdos complexos em experiências práticas, interativas e motivadoras, aproximando a teoria da realidade dos alunos.",
+            "icone": "fa-solid fa-lightbulb",
+            "cor": "#facc15",
+            "ordem": "3",
+            "titulo": "Inovação no Ensino"
+        },
+        {
+            "id": "tecnologias-emergentes",
+            "status": "Em desenvolvimento",
+            "descricao": "Estudos permanentes em Inteligência Artificial, Ciência de Dados, Cloud Computing, Desenvolvimento Full Stack, Automação e novas tecnologias aplicadas ao ensino, ao desenvolvimento de software e à inovação.",
+            "icone": "fa-solid fa-microchip",
+            "cor": "#14f1d9",
+            "titulo": "Tecnologias Emergentes",
+            "ordem": "2"
         }
     ],
     "certificados": [
         {
             "id": "backend-programming",
-            "nome": "Programação Back-End",
-            "ano": "2026",
             "imagem": "backend-programming.jpg",
-            "categoria": "Full Stack Development",
+            "pdf": "backend-programming.pdf",
             "instituicao": "UniFECAF",
+            "nome": "Programação Back-End",
             "tipo": "certificado",
-            "pdf": "backend-programming.pdf"
+            "ano": "2026",
+            "categoria": "Full Stack Development"
         },
         {
             "id": "cloud-deploy",
+            "pdf": "cloud-deploy.pdf",
+            "instituicao": "UniFECAF",
             "nome": "Cloud e Deploy",
             "imagem": "cloud-deploy.jpg",
-            "ano": "2026",
             "categoria": "Full Stack Development",
             "tipo": "certificado",
-            "pdf": "cloud-deploy.pdf",
-            "instituicao": "UniFECAF"
+            "ano": "2026"
         },
         {
             "id": "database-modeling",
-            "nome": "Database Modeling",
-            "imagem": "database-modeling.jpg",
-            "ano": "2026",
             "categoria": "Full Stack Development",
-            "pdf": "database-modeling.pdf",
             "tipo": "certificado",
-            "instituicao": "UniFECAF"
+            "ano": "2026",
+            "imagem": "database-modeling.jpg",
+            "instituicao": "UniFECAF",
+            "pdf": "database-modeling.pdf",
+            "nome": "Database Modeling"
         },
         {
             "id": "frontend-programming",
             "categoria": "Full Stack Development",
-            "tipo": "certificado",
-            "pdf": "frontend-programming.pdf",
-            "instituicao": "UniFECAF",
-            "nome": "Programação Front-End",
             "ano": "2026",
+            "tipo": "certificado",
+            "nome": "Programação Front-End",
+            "instituicao": "UniFECAF",
+            "pdf": "frontend-programming.pdf",
             "imagem": "frontend-programming.jpg"
         },
         {
             "id": "javascript-logic",
+            "imagem": "javascript-logic.jpg",
+            "instituicao": "UniFECAF",
+            "pdf": "javascript-logic.pdf",
+            "nome": "Lógica com JavaScript",
             "categoria": "Full Stack Development",
             "tipo": "certificado",
-            "pdf": "javascript-logic.pdf",
-            "instituicao": "UniFECAF",
-            "nome": "Lógica com JavaScript",
-            "ano": "2026",
-            "imagem": "javascript-logic.jpg"
+            "ano": "2026"
         },
         {
             "id": "python-flask",
-            "nome": "Desenvolvimento Web com Python e Flask",
-            "ano": "2024",
-            "imagem": "python-flask.jpg",
-            "categoria": "Desenvolvimento Web",
-            "tipo": "certificado",
+            "instituicao": "Udemy",
             "pdf": "python-flask.pdf",
-            "instituicao": "Udemy"
+            "nome": "Desenvolvimento Web com Python e Flask",
+            "imagem": "python-flask.jpg",
+            "tipo": "certificado",
+            "ano": "2024",
+            "categoria": "Desenvolvimento Web"
         },
         {
             "id": "spreadsheet-design-thinking",
-            "categoria": "Extensão",
-            "tipo": "certificado",
-            "pdf": "spreadsheet-design-thinking.pdf",
-            "instituicao": "UniFECAF",
+            "imagem": "spreadsheet-design-thinking.jpg",
             "nome": "Planilhas Eletrônicas - Design Thinking",
+            "instituicao": "UniFECAF",
+            "pdf": "spreadsheet-design-thinking.pdf",
             "ano": "2023",
-            "imagem": "spreadsheet-design-thinking.jpg"
+            "tipo": "certificado",
+            "categoria": "Extensão"
         },
         {
             "id": "web-design",
             "nome": "Web Design",
-            "ano": "2026",
-            "imagem": "web-design.jpg",
-            "categoria": "Full Stack Development",
             "instituicao": "UniFECAF",
+            "pdf": "web-design.pdf",
+            "imagem": "web-design.jpg",
             "tipo": "certificado",
-            "pdf": "web-design.pdf"
+            "ano": "2026",
+            "categoria": "Full Stack Development"
         }
     ],
     "badges": [
         {
             "id": "Laboratório de Matemática",
             "tipo": "badge",
-            "instituicao": "UniFECAF",
-            "categoria": "Matemática",
             "ano": "2023",
+            "categoria": "Matemática",
+            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/94890/view",
             "imagem": "laboratorio-matematica.png",
-            "nome": "Laboratório de Matemática",
-            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/94890/view"
+            "instituicao": "UniFECAF",
+            "nome": "Laboratório de Matemática"
         },
         {
             "id": "agile-methodology",
-            "categoria": "Metodologias Ágeis",
-            "tipo": "badge",
-            "instituicao": "UniFECAF",
+            "imagem": "agile-methodology.png",
             "nome": "Agile Methodology",
+            "instituicao": "UniFECAF",
             "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/122773/view",
+            "categoria": "Metodologias Ágeis",
             "ano": "2022",
-            "imagem": "agile-methodology.png"
+            "tipo": "badge"
         },
         {
             "id": "agile-software-design",
-            "instituicao": "UniFECAF",
-            "tipo": "badge",
-            "categoria": "Desenvolvimento de Software",
-            "ano": "2022",
-            "imagem": "agile-software-design.png",
             "nome": "Agile Software Design Básico",
-            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/144783/view"
+            "instituicao": "UniFECAF",
+            "imagem": "agile-software-design.png",
+            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/144783/view",
+            "categoria": "Desenvolvimento de Software",
+            "tipo": "badge",
+            "ano": "2022"
         },
         {
             "id": "computer-architecture",
+            "categoria": "Hardware",
+            "tipo": "badge",
             "ano": "2022",
-            "imagem": "computer-architecture.png",
-            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/104098/view",
             "nome": "Arquitetura Básica de Computadores",
             "instituicao": "UniFECAF",
-            "tipo": "badge",
-            "categoria": "Hardware"
+            "imagem": "computer-architecture.png",
+            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/104098/view"
         },
         {
             "id": "cybersecurity",
-            "instituicao": "UniFECAF",
             "tipo": "badge",
-            "categoria": "Segurança",
             "ano": "2022",
-            "imagem": "cybersecurity.png",
+            "categoria": "Segurança",
+            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/103072/view",
             "nome": "Cybersecurity",
-            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/103072/view"
+            "instituicao": "UniFECAF",
+            "imagem": "cybersecurity.png"
         },
         {
             "id": "data-analysis-social-impact",
-            "categoria": "Análise de Dados",
-            "tipo": "badge",
-            "instituicao": "UniFECAF",
             "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/169848/view",
+            "imagem": "data-analysis-social-impact.png",
             "nome": "Análise de Dados para Impacto Social",
+            "instituicao": "UniFECAF",
+            "tipo": "badge",
             "ano": "2024",
-            "imagem": "data-analysis-social-impact.png"
+            "categoria": "Análise de Dados"
         },
         {
             "id": "dba-foundation",
-            "ano": "2022",
-            "imagem": "dba-foundation.png",
             "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/71905/view",
             "nome": "DBA Foundation",
             "instituicao": "UniFECAF",
+            "imagem": "dba-foundation.png",
+            "ano": "2022",
             "tipo": "badge",
             "categoria": "Banco de Dados"
         },
         {
             "id": "esg-leadership",
-            "instituicao": "UniFECAF",
-            "tipo": "badge",
-            "categoria": "ESG",
-            "imagem": "esg-leadership.png",
-            "ano": "2022",
             "nome": "ESG Leadership",
-            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/147726/view"
+            "instituicao": "UniFECAF",
+            "imagem": "esg-leadership.png",
+            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/147726/view",
+            "categoria": "ESG",
+            "ano": "2022",
+            "tipo": "badge"
         },
         {
             "id": "ods-web-programming-front-end",
-            "instituicao": "UniFECAF",
             "tipo": "badge",
-            "categoria": "Desenvolvimento Web",
-            "imagem": "ods-web-programming-front-end.png",
             "ano": "2022",
+            "categoria": "Desenvolvimento Web",
+            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/169847/view",
+            "instituicao": "UniFECAF",
             "nome": "ODS Web Programming For Front End",
-            "link": "https://bip.brightspace.com/cabd6a42-976a-4fa2-80a8-36b0ec721d14/d2l/awards/assertions/169847/view"
+            "imagem": "ods-web-programming-front-end.png"
         }
     ],
     "tecnologias": [
         {
             "id": "css",
-            "icone": "devicon-css3-plain",
+            "nome": "CSS",
             "tags": [
                 "Layout",
                 "Responsividade",
                 "Design"
             ],
+            "icone": "devicon-css3-plain",
             "descricao": "Estilização de páginas responsivas utilizando CSS3, Flexbox, Grid e animações.",
-            "nivel": "Avançado",
-            "nome": "CSS"
+            "nivel": "Avançado"
         },
         {
             "id": "docker",
             "descricao": "Containers, Deploy e Virtualização.",
             "nivel": "Intermediário",
-            "nome": "Docker",
-            "icone": "devicon-docker-plain",
             "tags": [
                 "Containers",
                 "Deploy",
                 "Cloud"
-            ]
+            ],
+            "icone": "devicon-docker-plain",
+            "nome": "Docker"
         },
         {
             "id": "firebase",
+            "nivel": "Avançado",
+            "descricao": "Authentication, Firestore, Hosting e aplicações Web.",
             "icone": "devicon-firebase-plain",
             "tags": [
                 "Auth",
                 "Firestone",
                 "Hosting"
             ],
-            "descricao": "Authentication, Firestore, Hosting e aplicações Web.",
-            "nivel": "Avançado",
             "nome": "Firebase"
         },
         {
             "id": "git",
-            "nivel": "Intermediário",
-            "descricao": "Controle de versão, branches, merge e gerenciamento de código-fonte.",
-            "nome": "Git",
             "icone": "devicon-git-plain",
             "tags": [
                 "Branches",
                 "Merge",
                 "Versionamento"
-            ]
+            ],
+            "nome": "Git",
+            "nivel": "Intermediário",
+            "descricao": "Controle de versão, branches, merge e gerenciamento de código-fonte."
         },
         {
             "id": "github",
-            "nivel": "Avançado",
-            "descricao": "Hospedagem de projetos, versionamento, colaboração e integração com Git.",
-            "tipo": "fontawesome",
-            "nome": "GitHub",
-            "icone": "fa-brands fa-github",
             "tags": [
                 "Repositórios",
                 "Pull Requests",
                 "Actions"
-            ]
+            ],
+            "icone": "fa-brands fa-github",
+            "nome": "GitHub",
+            "nivel": "Avançado",
+            "tipo": "fontawesome",
+            "descricao": "Hospedagem de projetos, versionamento, colaboração e integração com Git."
         },
         {
             "id": "html",
-            "nome": "HTML",
-            "nivel": "Avançado",
             "descricao": "Estruturação de páginas Web utilizando HTML5 e boas práticas de desenvolvimento.",
+            "nivel": "Avançado",
             "icone": "devicon-html5-plain",
             "tags": [
                 "Estrutura",
                 "Semântica",
                 "Web"
-            ]
+            ],
+            "nome": "HTML"
         },
         {
             "id": "javascript",
-            "icone": "devicon-javascript-plain",
             "tags": [
                 "DOM",
                 "APIs",
                 "Interatividade"
             ],
+            "icone": "devicon-javascript-plain",
             "nome": "JavaScript",
             "nivel": "Avançado",
             "descricao": "Desenvolvimento Front-end e Back-end."
@@ -322,47 +353,47 @@
                 "Regressão",
                 "IA"
             ],
-            "nivel": "Avançado",
-            "descricao": "Construção de modelos preditivos, classificação, regressão e análise inteligente de dados.",
+            "nome": "Machine Learning",
             "tipo": "fontawesome",
-            "nome": "Machine Learning"
+            "nivel": "Avançado",
+            "descricao": "Construção de modelos preditivos, classificação, regressão e análise inteligente de dados."
         },
         {
             "id": "mysql",
             "descricao": "Banco de Dados Relacional e SQL.",
             "nivel": "Avançado",
             "nome": "MySQL",
-            "icone": "devicon-mysql-plain",
             "tags": [
                 "SQL",
                 "Consultas",
                 "Modelagem"
-            ]
+            ],
+            "icone": "devicon-mysql-plain"
         },
         {
             "id": "power-bi",
-            "nome": "Power BI",
-            "descricao": "Criação de dashboards, indicadores, relatórios interativos e análise de dados.",
-            "tipo": "fontawesome",
-            "nivel": "Avançado",
             "icone": "fa-solid fa-chart-column",
             "tags": [
                 "Dashboards",
                 "KPIs",
                 "BI"
-            ]
+            ],
+            "nome": "Power BI",
+            "descricao": "Criação de dashboards, indicadores, relatórios interativos e análise de dados.",
+            "nivel": "Avançado",
+            "tipo": "fontawesome"
         },
         {
             "id": "python",
-            "nivel": "Avançado",
             "descricao": "Desenvolvimento, Ciência de Dados, Inteligência Artificial e Automação.",
+            "nivel": "Avançado",
             "nome": "Python",
-            "icone": "devicon-python-plain",
             "tags": [
                 "IA",
                 "Automação",
                 "Machine Learning"
-            ]
+            ],
+            "icone": "devicon-python-plain"
         }
     ],
     "impactosDisciplinas": [
@@ -370,33 +401,68 @@
             "id": "algebra-linear",
             "descricao": "Desenvolve a base matemática para Inteligência Artificial, Ciência de Dados, Machine Learning, Computação Gráfica e Visão Computacional.",
             "importancia": "Ajuda o aluno a compreender vetores, matrizes e transformações.",
-            "nome": "Álgebra Linear",
+            "aplicacoes": "IA, Dados, Jogos, Robótica e Computação Gráfica.",
             "icone": "📐",
-            "aplicacoes": "IA, Dados, Jogos, Robótica e Computação Gráfica."
+            "nome": "Álgebra Linear"
         },
         {
             "id": "banco-de-dados",
-            "icone": "🗄️",
-            "aplicacoes": "Sistemas Web, ERP, CRM, Business Intelligence, Aplicativos e Ciência de Dados.",
             "descricao": "Ensina modelagem, armazenamento, organização e consulta de dados utilizados por sistemas e empresas.",
-            "nome": "Banco de Dados",
-            "importancia": "Toda aplicação moderna depende de um banco de dados para armazenar informações de forma segura e eficiente."
+            "importancia": "Toda aplicação moderna depende de um banco de dados para armazenar informações de forma segura e eficiente.",
+            "aplicacoes": "Sistemas Web, ERP, CRM, Business Intelligence, Aplicativos e Ciência de Dados.",
+            "icone": "🗄️",
+            "nome": "Banco de Dados"
         },
         {
             "id": "inteligencia-artificial",
-            "importancia": "Prepara o aluno para atuar em uma das áreas mais promissoras da tecnologia, desenvolvendo soluções inovadoras com Inteligência Artificial.",
-            "nome": "Inteligência Artificial",
-            "descricao": "Apresenta conceitos e técnicas para desenvolver sistemas inteligentes capazes de aprender, analisar dados e apoiar a tomada de decisões.",
             "aplicacoes": "Chatbots, IA Generativa, Machine Learning, Visão Computacional, Reconhecimento de Voz e Sistemas Inteligentes.",
-            "icone": "🤖"
+            "nome": "Inteligência Artificial",
+            "icone": "🤖",
+            "descricao": "Apresenta conceitos e técnicas para desenvolver sistemas inteligentes capazes de aprender, analisar dados e apoiar a tomada de decisões.",
+            "importancia": "Prepara o aluno para atuar em uma das áreas mais promissoras da tecnologia, desenvolvendo soluções inovadoras com Inteligência Artificial."
         },
         {
             "id": "matematica-discreta",
-            "descricao": "Desenvolve lógica, grafos, conjuntos e raciocínio computacional.",
-            "importancia": "Fortalece a base lógica necessária para resolver problemas em tecnologia.",
-            "nome": "Matemática Discreta",
             "icone": "🧠",
-            "aplicacoes": "Algoritmos, Redes, Segurança, Inteligência Artificial e Programação."
+            "nome": "Matemática Discreta",
+            "aplicacoes": "Algoritmos, Redes, Segurança, Inteligência Artificial e Programação.",
+            "descricao": "Desenvolve lógica, grafos, conjuntos e raciocínio computacional.",
+            "importancia": "Fortalece a base lógica necessária para resolver problemas em tecnologia."
+        }
+    ],
+    "acervo": [
+        {
+            "id": "algebra-linear",
+            "imagem": "algebra-linear.png",
+            "titulo": "Álgebra Linear",
+            "ordem": "1",
+            "topicos": "Matrizes • Sistemas Lineares • Espaços Vetoriais • Autovalores",
+            "categoria": "Matemática",
+            "descricao": "Fundamentos matemáticos essenciais para Ciência de Dados, Inteligência Artificial e Computação."
+        },
+        {
+            "id": "calculo",
+            "categoria": "Matemática",
+            "imagem": "calculo.png",
+            "topicos": "Limites • Derivadas • Integrais • Séries",
+            "titulo": "Cálculo",
+            "ordem": "2"
+        },
+        {
+            "id": "estatistica",
+            "ordem": "4",
+            "topicos": "Estatística Descritiva • Probabilidade • Distribuições • Inferência Estatística",
+            "titulo": "Estatística e Probabilidade",
+            "imagem": "estatistica.png",
+            "categoria": "Matemática"
+        },
+        {
+            "id": "logica",
+            "topicos": "Lógica Proposicional • Teoria dos Conjuntos • Probabilidade • Função",
+            "ordem": "3",
+            "titulo": "Lógica Matemática",
+            "imagem": "logica.png",
+            "categoria": "Matemática"
         }
     ]
 }
